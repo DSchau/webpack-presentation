@@ -1,21 +1,8 @@
-# Spectacle Boilerplate
+# webpack: the good parts, and then some other stuff too
 
-## Reference
+[Tuesday, July 26th at ng-nebraska][meetup]
 
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.markdown](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
+The slide-deck for the presentation given at ng-nebraska. The slides can be [viewed online here][slide-deck]
 
-## Development
-
-After downloading the boilerplate, your first order of business is to open terminal and run `npm install`
-
-Next, run `rm -R .git` to remove the existing version control.
-
-Then, to start up the local server, run `npm start`
-
-Open a browser and hit [http://localhost:3000](http://localhost:3000), and we are ready to roll
-
-## Build & Deployment
-
-Building the dist version of the project is as easy as running `npm run build`
-
-If you want to deploy the slideshow to surge, run `npm run deploy`
+[meetup]: http://www.meetup.com/ng-nebraska/events/232576541/?
+[slide-deck]: https://dschau.github.io/webpack-presentation

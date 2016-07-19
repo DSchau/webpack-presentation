@@ -9,10 +9,10 @@ export default function(extendProps, key) {
   }
 
   const props = Object.assign({
-    transition: ['slide'],
-    lang: 'js',
     code: {},
-    ranges: []
+    lang: 'js',
+    ranges: [],
+    transition: ['slide'],
   }, extendProps, { key });
 
   return (

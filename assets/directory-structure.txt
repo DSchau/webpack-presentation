@@ -1,0 +1,31 @@
+├── src/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── index.js
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── home/
+│   │   │   │    ├── _home.scss
+│   │   │   │    ├── index.js
+│   │   │   │    ├── welcome.png
+│   │   ├── shared/
+│   │   │   ├── constants/
+│   │   │   │    ├── index.js
+│   │   │   │    ├── urls.js
+│   │   │   ├── services/
+│   │   │   │    ├── authentication.js
+│   │   │   │    ├── index.js
+│   │   │   │    ├── roles.js
+│   │   ├── index.js
+│   ├── assets/
+│   │   ├── video/
+│   │   │    ├── intro.mp4
+│   ├── fonts/
+│   │   ├── Droid.eof
+│   │   ├── Droid.otf
+│   │   ├── Droid.ttf
+│   ├── styles/
+│   │   ├── _common.scss
+│   │   ├── _forms.scss
+│   │   ├── _typography.scss
+│   │   ├── app.scss
