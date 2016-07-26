@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
-import { Appear, BlockQuote, Cite, Heading, Fill, Image, Layout, List, ListItem, Quote } from 'spectacle';
+import {
+  Appear,
+  BlockQuote,
+  Cite,
+  Heading,
+  Fill,
+  Image,
+  Layout,
+  List,
+  ListItem,
+  Quote,
+  S
+} from 'spectacle';
 
 import preloader from 'spectacle/lib/utils/preloader';
 
@@ -36,33 +48,39 @@ export const Title = {
   }
 };
 
-export const LarkinQuote = {
+export const DocsQuote = {
   bgColor: 'secondary',
-  notes: "Sean Larkin is in the hizzy",
   transition: ['zoom'],
   slide() {
     return (
       <div>
         <BlockQuote>
-          <Quote>&hellip; I mean, what doesn&#39;t it do?</Quote>
-          <Cite>Sean Larkin</Cite>
+          <Quote textSize={42}>{ require('!!raw!assets/quotes/drumaddict71.txt') }</Quote>
+          <Cite>drumaddict71 (webpack docs comment)</Cite>
         </BlockQuote>
       </div>
     );
   }
 };
 
+export const Homer = {
+  bgImage: images.gifs.homer
+};
+
 export const Why = {
   slide() {
     return (
       <div>
-        <Heading size={1}>Why?</Heading>
+        <Heading size={2}>What problem(s!!) does webpack solve?</Heading>
       </div>
     );
   }
 };
 
 export const DirectoryStructure = {
+  notes: [
+    'And how to make this application performant, and not just a single huge JS file'
+  ],
   code: require('!!raw!assets/directory-structure.txt'),
   ranges: [
     { loc: [0, 31], title: 'Directory structure' },
@@ -106,21 +124,39 @@ export const What = {
   slide() {
     return (
       <div>
-        <Heading size={1}>What is it?</Heading>
+        <Heading size={2}>What can it do?</Heading>
       </div>
     );
   }
 };
 
-export const Snippet = {
-  code: require('!!raw!assets/code/webpack.config.js'),
-  ranges: [
-    { loc: [0, 65], title: 'webpack.config.js' },
-    { loc: [5, 10], title: 'The entry of a bundle' },
-    { loc: [10, 15], title: `A bundle's output` }
-  ]
+export const LarkinQuote = {
+  bgColor: 'secondary',
+  transition: ['zoom'],
+  slide() {
+    return (
+      <div>
+        <BlockQuote>
+          <Quote>{ require('!!raw!assets/quotes/sean-larkin.txt') }</Quote>
+          <Cite>Sean Larkin</Cite>
+        </BlockQuote>
+      </div>
+    );
+  }
 };
 
-export const Homer = {
-  bgImage: images.gifs.homer
+export const Features = {
+  slide() {
+    return (
+      <div>
+        <List>
+          <ListItem>Bundle disparate files into one file</ListItem>
+          <Appear><ListItem>Transpile ES6 to ES5</ListItem></Appear>
+          <Appear><ListItem>Split an application at logical points</ListItem></Appear>
+          <Appear><ListItem>Bundle an application, and all of its dependencies</ListItem></Appear>
+          <Appear><ListItem><S type="strikethrough">... solve world peace?</S></ListItem></Appear>
+        </List>
+      </div>
+    );
+  }
 };
