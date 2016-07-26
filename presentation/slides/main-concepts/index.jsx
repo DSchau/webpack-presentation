@@ -151,12 +151,11 @@ export const UserfulLoaders = {
               <Appear><ListItem>{ codeBlock('css-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('style-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('html-loader') }</ListItem></Appear>
-              <Appear><ListItem>{ codeBlock('raw-loader') }</ListItem></Appear>
             </List>
           </Fill>
           <Fill>
             <List>
-              <Appear><ListItem>{ codeBlock('ng-annotate-loader') }</ListItem></Appear>
+              <Appear><ListItem>{ codeBlock('raw-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('sass-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('url-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('awesome-typescript-loader') }</ListItem></Appear>
