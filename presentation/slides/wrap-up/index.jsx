@@ -34,6 +34,7 @@ export const Links = {
         <ListItem><Link textColor="secondary" href="https://www.youtube.com/watch?v=VkTCL6Nqm6Y">How Instagram uses Webpack</Link></ListItem>
         <ListItem><Link textColor="secondary" href="https://github.com/petehunt/webpack-howto">webpack-how-to</Link></ListItem>
         <ListItem><Link textColor="secondary" href="https://gist.github.com/sokra/27b24881210b56bbaff7">New in Webpack 2</Link></ListItem>
+        <ListItem><Link textColor="secondary" href="https://github.com/webpack/docs/wiki/list-of-plugins">List of Plugins</Link></ListItem>
       </List>
     );
   }
