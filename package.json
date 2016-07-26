@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
-  "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "name": "webpack-presentation",
+  "version": "1.0.0",
+  "description": "webpack: the good parts and some other things too",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -10,7 +10,11 @@
     "deploy": "npm run clean & npm run build && surge -p .",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "repository": {
+    "type": "git",
+    "repository": "https://github.com/DSchau/webpack-presentation"
+  },
   "license": "MIT",
   "dependencies": {
     "lodash.chunk": "^4.0.6",
