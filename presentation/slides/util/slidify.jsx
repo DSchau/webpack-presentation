@@ -7,6 +7,11 @@ export default function(aSlide, key) {
       <div></div>
     );
   };
+
+  if ( aSlide.notes && aSlide.notes.constructor === Array ) {
+    aSlide.notes = aSlide.notes.join('\n');
+  }
+
   const { slide, ...other } = aSlide;
   const props = Object.assign({
     align: 'center center',

@@ -1,0 +1,1 @@
+Thought I was the only one...! I came here from angular 2.It's just a module bundler,it's just a tool,yet it feels like rocket science with this bloated and all-over-the-place documentation
