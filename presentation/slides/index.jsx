@@ -14,7 +14,6 @@ import * as IntroSlides from './intro/';
 import * as WebpackConfigSlides from './webpack-config/';
 import * as MainConcepts from './main-concepts/';
 import * as WebpackTwoSlides from './webpack-two/';
-import * as WebpackCliSlides from './webpack-cli/';
 import * as BestPractices from './best-practices/';
 import * as Demos from './demos/';
 import * as WrapUp from './wrap-up/';
@@ -37,7 +36,6 @@ export class SlideDeck extends Component {
               WebpackConfigSlides,
               MainConcepts,
               WebpackTwoSlides,
-              WebpackCliSlides,
               BestPractices,
               Demos,
               WrapUp
