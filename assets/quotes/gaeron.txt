@@ -1,1 +1,0 @@
-Learning React [or webpack!] by copying boilerplates is like learning to cook by eating food in fancy restaurants. It doesn’t work.
