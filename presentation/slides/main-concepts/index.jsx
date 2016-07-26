@@ -168,6 +168,26 @@ export const UserfulLoaders = {
   }
 };
 
+export const AnatomyOfALoaderTitle = {
+  slide() {
+    return (
+      <div>
+        <Heading size={4} textColor="secondary" caps>Anatomy of a Loader</Heading>
+      </div>
+    );
+  }
+};
+
+export const AnatomyOfALoader = {
+  code: require('!!raw!assets/code/loader-example.js'),
+  ranges: [
+    { loc: [0, 14], title: 'The structure of a loader' },
+    { loc: [6, 7], title: 'A test' },
+    { loc: [7, 9], title: 'Include/exclude' },
+    { loc: [9, 10], title: 'The loaders' }
+  ]
+};
+
 export const Plugins = {
   notes: [
     'Everything in Webpack is a plugin',
