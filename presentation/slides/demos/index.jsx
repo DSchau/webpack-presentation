@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import {
   Appear,
+  BlockQuote,
+  Cite,
   CodePane,
   Heading,
   Link,
   Layout,
-  Fill
+  Fill,
+  Quote
 } from 'spectacle';
 
 import preloader from 'spectacle/lib/utils/preloader';
@@ -26,16 +29,33 @@ export const Title = {
 
 export const Links = {
   slide() {
-    const link = (href, text) => <Heading size={5}><Link href={href} textColor="secondary">{text}</Link></Heading>
     return (
       <Layout>
         <Fill>
-          { link("https://github.com/DSchau/angular-webpack-simple", "angular-webpack-simple") }
+          <Heading size={5}>
+            <Link href="https://github.com/DSchau/angular-webpack-simple" textColor="secondary">angular-webpack-simple</Link>
+          </Heading>
         </Fill>
         <Fill>
-          { link("https://github.com/DSchau/angular2-webpack-simple", "angular2-webpack-simple") }
+          <Heading size={5}>
+            <Link href="https://github.com/DSchau/angular2-webpack-simple" textColor="secondary">angular2-webpack-simple</Link>
+          </Heading>
         </Fill>
       </Layout>
+    );
+  }
+};
+
+export const BoilerplateQuote = {
+  bgColor: 'secondary',
+  slide() {
+    return (
+      <div>
+        <BlockQuote>
+          <Quote textSize={42}>{ require('!!raw!assets/quotes/gaeron.txt') }</Quote>
+          <Cite>gaeron (react-makes-you-sad)</Cite>
+        </BlockQuote>
+      </div>
     );
   }
 };

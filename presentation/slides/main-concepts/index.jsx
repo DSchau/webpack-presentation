@@ -151,12 +151,11 @@ export const UserfulLoaders = {
               <Appear><ListItem>{ codeBlock('css-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('style-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('html-loader') }</ListItem></Appear>
-              <Appear><ListItem>{ codeBlock('raw-loader') }</ListItem></Appear>
             </List>
           </Fill>
           <Fill>
             <List>
-              <Appear><ListItem>{ codeBlock('ng-annotate-loader') }</ListItem></Appear>
+              <Appear><ListItem>{ codeBlock('raw-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('sass-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('url-loader') }</ListItem></Appear>
               <Appear><ListItem>{ codeBlock('awesome-typescript-loader') }</ListItem></Appear>
@@ -166,6 +165,26 @@ export const UserfulLoaders = {
       </div>
     );
   }
+};
+
+export const AnatomyOfALoaderTitle = {
+  slide() {
+    return (
+      <div>
+        <Heading size={4} textColor="secondary" caps>Anatomy of a Loader</Heading>
+      </div>
+    );
+  }
+};
+
+export const AnatomyOfALoader = {
+  code: require('!!raw!assets/code/loader-example.js'),
+  ranges: [
+    { loc: [0, 14], title: 'The structure of a loader' },
+    { loc: [6, 7], title: 'A test' },
+    { loc: [7, 9], title: 'Include/exclude' },
+    { loc: [9, 10], title: 'The loaders' }
+  ]
 };
 
 export const Plugins = {
