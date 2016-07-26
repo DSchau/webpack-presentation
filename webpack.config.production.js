@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: [
     'babel-polyfill',
@@ -9,9 +11,13 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: './dist/'
+    publicPath: './'
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: path.resolve('index.html')
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
