@@ -43,6 +43,7 @@ export const Title = {
         <Heading size={6} textColor="#CCC">
           ... and some other stuff too
         </Heading>
+        <Heading size={8} textColor="white">Dustin Schau</Heading>
       </div>
     );
   }
