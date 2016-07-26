@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import {
   Appear,
+  BlockQuote,
+  Cite,
   CodePane,
   Heading,
   Link,
   Layout,
-  Fill
+  Fill,
+  Quote
 } from 'spectacle';
 
 import preloader from 'spectacle/lib/utils/preloader';
@@ -39,6 +42,20 @@ export const Links = {
           </Heading>
         </Fill>
       </Layout>
+    );
+  }
+};
+
+export const BoilerplateQuote = {
+  bgColor: 'secondary',
+  slide() {
+    return (
+      <div>
+        <BlockQuote>
+          <Quote textSize={42}>{ require('!!raw!assets/quotes/gaeron.txt') }</Quote>
+          <Cite>gaeron (react-makes-you-sad)</Cite>
+        </BlockQuote>
+      </div>
     );
   }
 };
